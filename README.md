@@ -4,6 +4,8 @@ A networked pomodoro-style timer to help you focus with your friends.
 
 In development. 🚧
 
+In the meantime, join [our community](https://forum.codeselfstudy.com/).
+
 ## Install
 
 ```

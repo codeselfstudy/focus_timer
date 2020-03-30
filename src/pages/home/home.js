@@ -19,6 +19,13 @@ const HomePage = () => (
             Numquam consequuntur commodi praesentium tempore nobis porro Dolor
             nobis incidunt dignissimos.
         </p>
+        <h2>How to Contribute</h2>
+        <p>
+            Sit cum nobis tempore alias laudantium libero. Deleniti reiciendis
+            corrupti iusto fuga maiores? Quidem rerum est quisquam suscipit
+            veniam magni a, dolores Quia soluta eveniet facilis repudiandae
+            molestiae. Nemo reiciendis?
+        </p>
     </div>
 );
 
