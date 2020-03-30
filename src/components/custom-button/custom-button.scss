@@ -8,12 +8,13 @@
     border-radius: 5px;
     box-shadow: 5px 5px 1px 0 #2c1b25;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &:active {
         box-shadow: 1px 1px 0px 0 #2c1b25;
         box-shadow: 0 0 5px 5px #fdc100;
-        -webkit-transform: translate3d(4px, 4px, 0px) scale3d(1, 1, 1)
-            rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-        transform: translate3d(4px, 4px, 0px) scale3d(1, 1, 1) rotateX(0deg)
-            rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+        transform: translate3d(4px, 4px, 0px);
     }
 }
