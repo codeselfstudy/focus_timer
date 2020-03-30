@@ -18,4 +18,5 @@ export const colorsList = [
     "#3e8dac",
 ];
 
+// this might not be necessary
 export const colors = mapColorsToObj(colorsList);

@@ -9,13 +9,16 @@ import "./palette.scss";
 
 function Color({ hex }) {
     return (
-        <div
-            style={{
-                backgroundColor: hex,
-                width: 50,
-                height: 50,
-            }}
-        ></div>
+        <div>
+            <div
+                style={{
+                    backgroundColor: hex,
+                    width: 50,
+                    height: 50,
+                }}
+            ></div>
+            <small style={{ color: "#666" }}>{hex}</small>
+        </div>
     );
 }
 
