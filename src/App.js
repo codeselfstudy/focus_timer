@@ -16,7 +16,7 @@ import "./App.scss";
 function App({ currentUser }) {
     return (
         <div className="app">
-            <Navbar siteName={settings.site.title} />
+            <Navbar siteName={settings.site.metadata.title} />
 
             <div className="page-wrapper">
                 <Switch>
@@ -32,7 +32,7 @@ function App({ currentUser }) {
                 </Switch>
             </div>
 
-            <Footer siteName={settings.site.title} />
+            <Footer siteName={settings.site.metadata.title} />
         </div>
     );
 }

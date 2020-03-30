@@ -8,7 +8,7 @@ const Footer = ({ siteName }) => (
     <div className="footer">
         <div className="left">
             &copy; {new Date().getFullYear()} {siteName} &bull;{" "}
-            <Link to="/about">About</Link> &bull;{" "}
+            <Link to="/about">About</Link>
         </div>
         <div className="right">
             <div className="icons">
