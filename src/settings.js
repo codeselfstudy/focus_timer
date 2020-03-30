@@ -1,6 +1,6 @@
 const settings = {
     site: {
-        title: "Productivity Timer",
+        title: "Focus Timer",
     },
 };
 
