@@ -28,7 +28,7 @@ const HomePage = () => (
             molestiae. Nemo reiciendis?
         </p>
         <h3>Palette Idea</h3>
-        <Palette style={{opacity: 0.1}}/>
+        <Palette />
     </div>
 );
 
