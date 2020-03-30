@@ -1,6 +1,6 @@
 const settings = {
     site: {
-        title: "Timeboxer",
+        title: "Productivity Timer",
     },
 };
 

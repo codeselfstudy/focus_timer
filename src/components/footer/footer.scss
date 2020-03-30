@@ -2,11 +2,22 @@
     margin-top: 127px;
     border-top: 1px solid #666;
     padding: 67px 127px;
-
-    background-color: #111;
+    background-color: #2a1923;
     color: #eee;
+    display: flex;
+    justify-content: space-between;
 
     a {
         color: #eee;
+    }
+
+    .left {
+    }
+
+    .right {
+    }
+
+    &.icons {
+        color: #666;
     }
 }

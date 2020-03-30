@@ -11,24 +11,27 @@ import AboutPage from "./pages/about/about";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
 
-import "./App.css";
+import "./App.scss";
 
 function App({ currentUser }) {
     return (
-        <div className="App">
+        <div className="app">
             <Navbar siteName={settings.site.title} />
 
-            <Switch>
-                <Route exact path="/" component={HomePage} />
-                <Route exact path="/about" component={AboutPage} />
-                <Route path="/timer" component={TimerPage} />
-                <Route
-                    path="/auth"
-                    render={() =>
-                        currentUser ? <Redirect to="/" /> : <AuthPage />
-                    }
-                />
-            </Switch>
+            <div className="page-wrapper">
+                <Switch>
+                    <Route exact path="/" component={HomePage} />
+                    <Route exact path="/about" component={AboutPage} />
+                    <Route path="/timer" component={TimerPage} />
+                    <Route
+                        path="/auth"
+                        render={() =>
+                            currentUser ? <Redirect to="/" /> : <AuthPage />
+                        }
+                    />
+                </Switch>
+            </div>
+
             <Footer siteName={settings.site.title} />
         </div>
     );
