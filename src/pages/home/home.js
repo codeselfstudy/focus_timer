@@ -1,6 +1,7 @@
 import React from "react";
 
 import CustomButton from "../../components/custom-button/custom-button";
+import Palette from "../../components/palette/palette";
 
 import "./home.scss";
 
@@ -26,6 +27,8 @@ const HomePage = () => (
             veniam magni a, dolores Quia soluta eveniet facilis repudiandae
             molestiae. Nemo reiciendis?
         </p>
+        <h3>Palette Idea</h3>
+        <Palette style={{opacity: 0.1}}/>
     </div>
 );
 
