@@ -2,8 +2,22 @@
     color: #fff;
     background-color: slategray;
     padding: 27px;
+    display: flex;
+    justify-content: space-between;
+
+    .left {
+    }
+
+    .right {
+    }
+
+    a {
+        text-decoration: none;
+        color: #eee;
+    }
 
     .site-name {
         font-size: 1.4rem;
+        font-weight: bold;
     }
 }
