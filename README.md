@@ -50,6 +50,7 @@ Use snake-case.
 
 - [X] user sign up
 - [ ] user sign in
+- [ ] style the sign-in/up forms
 - [ ] "create timer" form
 - [ ] when user creates a timer it redirects to a URL with a timer
 - [ ] set firestore permissions
