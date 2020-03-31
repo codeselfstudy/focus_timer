@@ -1,7 +1,6 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
-import "firebase/analytics";
 
 // Note, you have to set your environment variables with a `.env`
 // file. See the `.env-example` file for instructions.
@@ -16,7 +15,6 @@ const config = {
     storageBucket: process.env.REACT_APP_STORAGEBUCKET,
     messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
     appId: process.env.REACT_APP_APPID,
-    measurementId: process.env.REACT_APP_MEASUREMENTID,
 };
 
 export const createUserProfile = async (userAuth, userData) => {
@@ -49,7 +47,6 @@ export const createUserProfile = async (userAuth, userData) => {
 };
 
 firebase.initializeApp(config);
-firebase.analytics();
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
