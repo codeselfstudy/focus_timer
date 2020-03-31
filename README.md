@@ -39,3 +39,17 @@ $ ./g p contact
 ```
 
 Use snake-case.
+
+## TODO
+
+- [X] user sign up
+- [ ] user sign in
+- [ ] "create timer" form
+- [ ] when user creates a timer it redirects to a URL with a timer
+- [ ] set firestore permissions
+- [ ] add sound notifications
+- [ ] add browser notifications
+- [ ] work on design
+- [ ] join a timer
+- [ ] show user count
+- [ ] points system
