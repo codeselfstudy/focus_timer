@@ -1,6 +1,7 @@
 import firebase from "firebase/app";
 import "firebase/firestore";
 import "firebase/auth";
+import "firebase/analytics";
 
 // Note, you have to set your environment variables with a `.env`
 // file. See the `.env-example` file for instructions.
@@ -48,6 +49,7 @@ export const createUserProfile = async (userAuth, userData) => {
 };
 
 firebase.initializeApp(config);
+firebase.analytics();
 
 export const auth = firebase.auth();
 export const firestore = firebase.firestore();
