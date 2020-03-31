@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
 // import Notification from "./components/notification/notification";
 
-import settings from "./settings";
+import metadata from "./settings/metadata";
 
 import HomePage from "./pages/home/home";
 import AuthPage from "./pages/auth/auth";
@@ -20,7 +20,7 @@ function App({ currentUser }) {
 
     return (
         <div className="app">
-            <Navbar siteName={settings.site.metadata.title} />
+            <Navbar siteName={metadata.title} />
 
             <div className="page-wrapper">
                 <Switch>
@@ -36,7 +36,7 @@ function App({ currentUser }) {
                 </Switch>
             </div>
 
-            <Footer siteName={settings.site.metadata.title} />
+            <Footer siteName={metadata.title} />
         </div>
     );
 }

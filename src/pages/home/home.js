@@ -3,14 +3,14 @@ import React from "react";
 import StartButton from "../../components/start-button/start-button";
 import Palette from "../../components/palette/palette";
 
+import metadata from "../../settings/metadata";
+
 import "./home.scss";
 
 const HomePage = () => (
     <div className="home">
-        <h1>Focus Timer</h1>
-        <p className="subtitle">
-            A pomodoro-style timer to help you focus with your friends.
-        </p>
+        <h1>{metadata.title}</h1>
+        <p className="subtitle">{metadata.description}</p>
 
         <StartButton>Start Timer</StartButton>
         <h2>How It Works</h2>
