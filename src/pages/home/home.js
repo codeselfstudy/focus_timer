@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Palette from "../../components/palette/palette";
-
 import metadata from "../../settings/metadata";
 
 import "./home.scss";
@@ -11,12 +9,12 @@ const HomePage = () => (
     <div className="home">
         <h1>{metadata.title}</h1>
         <p className="subtitle">{metadata.description}</p>
-        <Link to="/timer">Start a Timer</Link>
+        <Link to="/start">Start a Timer</Link>
         <h2>How It Works</h2>
-        <p>todo</p>
         <p>
             In order to prevent spam, you need to log in to create and manage a
-            timer, but anyone can follow a timer.
+            timer, but anyone can follow a timer. If they also log in, they will
+            have access to additional features.
         </p>
 
         <p>
@@ -25,13 +23,33 @@ const HomePage = () => (
         </p>
         <h2>How to Contribute</h2>
         <p>
-            Sit cum nobis tempore alias laudantium libero. Deleniti reiciendis
-            corrupti iusto fuga maiores? Quidem rerum est quisquam suscipit
-            veniam magni a, dolores Quia soluta eveniet facilis repudiandae
-            molestiae. Nemo reiciendis?
+            The source code is on{" "}
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://github.com/codeselfstudy/focus_timer"
+            >
+                Github
+            </a>
+            . Please join{" "}
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://forum.codeselfstudy.com/"
+            >
+                our online community
+            </a>{" "}
+            and ask the members there about current tasks that might need
+            assistance. See also the{" "}
+            <a
+                href="https://github.com/codeselfstudy/focus_timer/issues"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                issue queue
+            </a>
+            .
         </p>
-        <h3>Palette Ideas</h3>
-        <Palette />
     </div>
 );
 

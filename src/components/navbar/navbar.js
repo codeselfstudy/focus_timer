@@ -5,7 +5,7 @@ import { createStructuredSelector } from "reselect";
 
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 
-import { auth } from "../../firebase/firebase.utils";
+// import { auth } from "../../firebase/firebase.utils";
 
 import "./navbar.scss";
 

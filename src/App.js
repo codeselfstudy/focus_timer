@@ -8,6 +8,7 @@ import metadata from "./settings/metadata";
 
 import HomePage from "./pages/home/home";
 import AuthPage from "./pages/auth/auth";
+import TimerStartPage from "./pages/timer-start/timer-start";
 import TimerPage from "./pages/timer/timer";
 import AboutPage from "./pages/about/about";
 import ProfilePage from "./pages/profile/profile";
@@ -60,7 +61,8 @@ class App extends React.Component {
                         <Route exact path="/" component={HomePage} />
                         <Route exact path="/about" component={AboutPage} />
                         <Route exact path="/profile" component={ProfilePage} />
-                        <Route path="/timer" component={TimerPage} />
+                        <Route exact path="/start" component={TimerStartPage} />
+                        <Route path="/timer/:timerId" component={TimerPage} />
                         <Route
                             path="/auth"
                             render={() =>

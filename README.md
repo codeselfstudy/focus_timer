@@ -61,5 +61,5 @@ Use snake-case.
 - [ ] join a timer
 - [ ] remove the lines in `.gitignore` to add Redux
 - [ ] add a note that users should email an admin to delete their account (if desired)
-- [ ] show user count per timer
+- [ ] show the number of users on a timer
 - [ ] points system
