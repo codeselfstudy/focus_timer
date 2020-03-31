@@ -1,5 +1,5 @@
 {
-    "name": "timeboxer",
+    "name": "@codeselfstudy/focus_timer",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
