@@ -15,7 +15,7 @@ const StartButton = ({ children, ...otherProps }) => {
         setTimeout(() => {
             // TODO: set a timerId from Firebase
             setTimerId(Math.floor(Math.random() * 1000));
-        }, 2000);
+        }, 1500);
     }
 
     return (

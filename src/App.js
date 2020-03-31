@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import { Route, Switch, Redirect } from "react-router-dom";
+// import Notification from "./components/notification/notification";
 
 import settings from "./settings";
 
@@ -14,6 +15,9 @@ import Footer from "./components/footer/footer";
 import "./App.scss";
 
 function App({ currentUser }) {
+    // Should this be stored globally?
+    // const [notificationsEnabled, setNotificationsEnabled] = useState(false);
+
     return (
         <div className="app">
             <Navbar siteName={settings.site.metadata.title} />
