@@ -38,6 +38,12 @@ Create a page in the `src/pages` dir:
 $ ./g p contact
 ```
 
+Create Redux boilerplate in the `src/redux` dir:
+
+```text
+$ ./g r timer
+```
+
 Use snake-case.
 
 ## TODO
