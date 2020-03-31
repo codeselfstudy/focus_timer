@@ -1,3 +1,8 @@
+# TODO: remove the next two lines when you add redux
+src/redux/*
+!src/redux/README.md
+# end TODO
+
 .env
 tmp/
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
