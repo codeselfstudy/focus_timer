@@ -27,7 +27,7 @@ const HomePage = () => (
             veniam magni a, dolores Quia soluta eveniet facilis repudiandae
             molestiae. Nemo reiciendis?
         </p>
-        <h3>Palette Idea</h3>
+        <h3>Palette Ideas</h3>
         <Palette />
     </div>
 );

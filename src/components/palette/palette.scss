@@ -1,4 +1,7 @@
 .palette {
     display: flex;
-    justify-content: space-around;
+
+    &.color {
+        justify-content: space-around;
+    }
 }

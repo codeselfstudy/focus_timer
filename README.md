@@ -12,6 +12,10 @@ In the meantime, join [our community](https://forum.codeselfstudy.com/).
 $ npm install
 ```
 
+## Configure
+
+Copy the file `.env-example` to `.env` and add your Firebase settings there. They don't need to be secret, but Firebase costs money.
+
 ## Run
 
 ```text
