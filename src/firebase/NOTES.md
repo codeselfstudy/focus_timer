@@ -20,7 +20,7 @@ The start and stop times aren't as important as the length.
 
 An event can either be a `start` or `stop`. A `stop` performed while `elapsedTime` is less than the `unit`'s `length`, is considered `paused`.
 
-A timer can expire when the blocks are finished or it can repeat (possibly bt appending the existing blocks on the end so that they are not destroyed?).
+A timer can expire when the blocks are finished or it can repeat (possibly by appending the existing blocks on the end so that they are not destroyed?).
 
 ```javascript
 const timer = {
