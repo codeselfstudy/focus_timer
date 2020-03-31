@@ -57,7 +57,9 @@ Use snake-case.
 - [ ] add sound notifications
 - [ ] add browser notifications
 - [ ] work on design
+- [ ] create user profile page(s)
 - [ ] join a timer
 - [ ] remove the lines in `.gitignore` to add Redux
-- [ ] show user count
+- [ ] add a note that users should email an admin to delete their account (if desired)
+- [ ] show user count per timer
 - [ ] points system
