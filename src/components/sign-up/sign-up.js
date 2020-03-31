@@ -8,13 +8,18 @@ import { auth, createUserProfile } from "../../firebase/firebase.utils";
 import "./sign-up.scss";
 
 const SignUp = () => {
-    const [displayName, setDisplayName] = useState("");
-    const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
-    const [confirmPassword, setConfirmPassword] = useState("");
+    const emptyFormValues = {
+        displayName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
+    };
+
+    const [values, setValues] = useState(emptyFormValues);
 
     async function handleSubmit(e) {
         e.preventDefault();
+        const { displayName, email, password, confirmPassword } = values;
         if (password !== confirmPassword) {
             alert("passwords don't match");
             return;
@@ -25,13 +30,8 @@ const SignUp = () => {
                 email,
                 password
             );
-
             createUserProfile(user, { displayName });
-
-            setDisplayName("");
-            setEmail("");
-            setPassword("");
-            setConfirmPassword("");
+            setValues(emptyFormValues);
         } catch (err) {
             console.error(err);
         }
@@ -39,20 +39,47 @@ const SignUp = () => {
 
     function handleChange(e) {
         const { name, value } = e.target;
+        setValues({ ...values, [name]: value });
     }
 
     return (
         <div className="sign-up">
+            <h2>Sign Up</h2>
             <form className="sign-up-form" onSubmit={handleSubmit}>
                 <FormInput
                     type="text"
                     label="Username"
                     name="displayName"
-                    value={displayName}
+                    value={values.displayName}
                     onChange={handleChange}
                     required
                 />
-                <CustomButton>Sign In</CustomButton>
+                <FormInput
+                    type="email"
+                    label="Email"
+                    name="email"
+                    value={values.email}
+                    onChange={handleChange}
+                    required
+                />
+                <FormInput
+                    type="password"
+                    label="Password"
+                    name="password"
+                    value={values.password}
+                    onChange={handleChange}
+                    required
+                />
+                <FormInput
+                    type="password"
+                    label="Confirm Password"
+                    name="confirmPassword"
+                    value={values.confirmPassword}
+                    onChange={handleChange}
+                    required
+                />
+
+                <CustomButton type="submit">Sign Up</CustomButton>
             </form>
         </div>
     );
