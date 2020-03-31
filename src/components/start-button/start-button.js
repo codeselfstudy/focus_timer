@@ -1,42 +1,36 @@
 import React, { useState } from "react";
-import Spinner from "../../components/spinner/spinner";
 import { Redirect } from "react-router-dom";
+// import Spinner from "../../components/spinner/spinner";
 
 import "./start-button.scss";
 
 const StartButton = ({ children, ...otherProps }) => {
     const [isPressed, setIsPressed] = useState(false);
-    const [timerId, setTimerId] = useState(null);
+    const [depressedClass, setDepressedClass] = useState("");
 
-    // TODO: after `isPressed` is true, show spinner for 1 sec and
-    // redirect to a timer URL
+    // TODO: after `isPressed` is true, redirect to a URL where people
+    // can configure a timer.
     function handleMouseDown(_e) {
-        setIsPressed(true);
+        setDepressedClass("is-pressed");
         setTimeout(() => {
-            // TODO: set a timerId from Firebase
-            setTimerId(Math.floor(Math.random() * 1000));
-        }, 1500);
+            setIsPressed(true);
+        }, 700);
     }
 
     return (
         <>
-            {/* once it gets a timerId, then redirect */}
-            {timerId ? (
-                <Redirect to={`/timer/${timerId}`} />
-            ) : (
+            {!isPressed ? (
                 <button
                     onMouseDown={handleMouseDown}
-                    className={`start-button ${isPressed ? "is-pressed" : ""}`}
+                    className={`start-button ${
+                        depressedClass ? "is-pressed" : null
+                    }`}
                     {...otherProps}
                 >
-                    {isPressed ? (
-                        <span>
-                            Starting Timer <Spinner fontSize="50" />
-                        </span>
-                    ) : (
-                        <span>Start Timer</span>
-                    )}
+                    Start a Timer
                 </button>
+            ) : (
+                <Redirect to="/timer" />
             )}
         </>
     );
