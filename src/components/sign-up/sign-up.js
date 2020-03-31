@@ -3,17 +3,38 @@ import React, { useState } from "react";
 import FormInput from "../form-input/form-input";
 import CustomButton from "../custom-button/custom-button";
 
+import { auth, createUserProfile } from "../../firebase/firebase.utils";
+
 import "./sign-up.scss";
 
 const SignUp = () => {
-    const [displayName, setDisplayName] = useState(null);
-    const [email, setEmail] = useState(null);
-    const [password, setPassword] = useState(null);
-    const [confirmPassword, setConfirmPassword] = useState(null);
+    const [displayName, setDisplayName] = useState("");
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [confirmPassword, setConfirmPassword] = useState("");
 
-    function handleSubmit(e) {
+    async function handleSubmit(e) {
         e.preventDefault();
-        alert("clicked");
+        if (password !== confirmPassword) {
+            alert("passwords don't match");
+            return;
+        }
+
+        try {
+            const { user } = await auth.createUserWithEmailAndPassword(
+                email,
+                password
+            );
+
+            createUserProfile(user, { displayName });
+
+            setDisplayName("");
+            setEmail("");
+            setPassword("");
+            setConfirmPassword("");
+        } catch (err) {
+            console.error(err);
+        }
     }
 
     function handleChange(e) {
@@ -25,7 +46,7 @@ const SignUp = () => {
             <form className="sign-up-form" onSubmit={handleSubmit}>
                 <FormInput
                     type="text"
-                    label="displayName"
+                    label="Username"
                     name="displayName"
                     value={displayName}
                     onChange={handleChange}
