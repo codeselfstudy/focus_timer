@@ -1,7 +1,4 @@
-# TODO: remove the next two lines when you add redux
-src/redux/*
-!src/redux/README.md
-# end TODO
+*.tmp
 
 .env
 tmp/
