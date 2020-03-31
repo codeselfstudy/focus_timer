@@ -1,23 +1,24 @@
-$button-color: #ac352d;
+// TODO: fix colors and styling
+$button-color: #659655;
 
 .custom-button {
     background-color: $button-color;
     border: none;
     color: white;
-    padding: 30px;
-    font-size: 2rem;
+    padding: 10px;
+    font-size: 1rem;
     font-family: "Open Sans";
-    border-radius: 5px;
-    box-shadow: 5px 5px 1px 0 #2c1b25;
+    border-radius: 3px;
+    // box-shadow: 5px 5px 1px 0 #2c1b25;
 
     &:hover {
         cursor: pointer;
+        background-color: darken($button-color, 10%);
     }
 
     &:active {
-        background-color: lighten($button-color, 10%);
-        box-shadow: 1px 1px 0px 0 #2c1b25;
-        box-shadow: 0 0 20px 3px #fdc100;
-        transform: translate3d(4px, 4px, 0px);
+        // box-shadow: 1px 1px 0px 0 #2c1b25;
+        // box-shadow: 0 0 20px 3px #fdc100;
+        // transform: translate3d(4px, 4px, 0px);
     }
 }

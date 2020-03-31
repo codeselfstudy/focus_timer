@@ -1,6 +1,6 @@
 import React from "react";
 
-import CustomButton from "../../components/custom-button/custom-button";
+import StartButton from "../../components/start-button/start-button";
 import Palette from "../../components/palette/palette";
 
 import "./home.scss";
@@ -12,13 +12,17 @@ const HomePage = () => (
             A pomodoro-style timer to help you focus with your friends.
         </p>
 
-        <CustomButton>Start Timer</CustomButton>
+        <StartButton>Start Timer</StartButton>
         <h2>How It Works</h2>
+        <p>todo</p>
         <p>
-            Amet eligendi corrupti libero laborum nisi. Voluptates ex non eum
-            temporibus maiores. Similique illo mollitia sed labore eius placeat
-            Numquam consequuntur commodi praesentium tempore nobis porro Dolor
-            nobis incidunt dignissimos.
+            In order to prevent spam, you need to log in to create and manage a
+            timer, but anyone can follow a timer.
+        </p>
+
+        <p>
+            <strong>TIP:</strong> Be sure to enable desktop notifications to get
+            pop-up alerts when the timer starts and stops!
         </p>
         <h2>How to Contribute</h2>
         <p>

@@ -8,7 +8,14 @@ const Footer = ({ siteName }) => (
     <div className="footer">
         <div className="left">
             &copy; {new Date().getFullYear()} {siteName} &bull;{" "}
-            <Link to="/about">About</Link>
+            <Link to="/about">About</Link> &bull;{" "}
+            <a
+                href="https://codeselfstudy.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Code Self Study
+            </a>
         </div>
         <div className="right">
             <div className="icons">
