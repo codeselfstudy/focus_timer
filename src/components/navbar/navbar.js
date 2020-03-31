@@ -21,7 +21,7 @@ const Navbar = ({ siteName, currentUser }) => {
 
             <div className="right">
                 {currentUser ? (
-                    currentUser.displayName
+                    <Link to="/profile">{currentUser.displayName}</Link>
                 ) : (
                     <Link to="/auth">Sign In</Link>
                 )}
