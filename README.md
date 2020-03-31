@@ -58,5 +58,6 @@ Use snake-case.
 - [ ] add browser notifications
 - [ ] work on design
 - [ ] join a timer
+- [ ] remove the lines in `.gitignore` to add Redux
 - [ ] show user count
 - [ ] points system
