@@ -7,6 +7,8 @@ import App from "./App";
 
 import "./index.scss";
 
+import { config } from "./firebase/firebase.utils";
+
 ReactDOM.render(
     <React.StrictMode>
         <BrowserRouter>
