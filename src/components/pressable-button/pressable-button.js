@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { Redirect } from "react-router-dom";
 // import Spinner from "../../components/spinner/spinner";
 
-import "./start-button.scss";
+import "./pressable-button.scss";
 
-const StartButton = ({ children, ...otherProps }) => {
+const PressableButton = ({ children, ...otherProps }) => {
     const [isPressed, setIsPressed] = useState(false);
     const [depressedClass, setDepressedClass] = useState("");
 
@@ -22,12 +22,12 @@ const StartButton = ({ children, ...otherProps }) => {
             {!isPressed ? (
                 <button
                     onMouseDown={handleMouseDown}
-                    className={`start-button ${
+                    className={`pressable-button ${
                         depressedClass ? "is-pressed" : null
                     }`}
                     {...otherProps}
                 >
-                    Start a Timer
+                    {children}
                 </button>
             ) : (
                 <Redirect to="/timer" />
@@ -36,4 +36,4 @@ const StartButton = ({ children, ...otherProps }) => {
     );
 };
 
-export default StartButton;
+export default PressableButton;

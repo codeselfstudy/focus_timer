@@ -1,6 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import StartButton from "../../components/start-button/start-button";
 import Palette from "../../components/palette/palette";
 
 import metadata from "../../settings/metadata";
@@ -11,8 +11,7 @@ const HomePage = () => (
     <div className="home">
         <h1>{metadata.title}</h1>
         <p className="subtitle">{metadata.description}</p>
-
-        <StartButton>Start Timer</StartButton>
+        <Link to="/timer">Start a Timer</Link>
         <h2>How It Works</h2>
         <p>todo</p>
         <p>
