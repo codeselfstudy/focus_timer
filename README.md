@@ -74,3 +74,12 @@ Use snake-case.
 - [ ] join a timer
 - [ ] show the number of users on a timer
 - [ ] points system
+
+I don't think it should tick on the server in this version, because that could be considered a Firebase write or cloud function execution. 💸
+
+Maybe something like this:
+
+- initial time is set in Firestore on creation
+- each client connects and gets the start time, calculating the remainder
+- each client counts down on the client side
+- a cloud function writes to Firestore on events (start, stop/pause), which subscribers receive
