@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import ExternalLink from "../../components/external-link/external-link";
+
 import metadata from "../../settings/metadata";
 
 import "./home.scss";
@@ -24,30 +26,18 @@ const HomePage = () => (
         <h2>How to Contribute</h2>
         <p>
             The source code is on{" "}
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://github.com/codeselfstudy/focus_timer"
-            >
+            <ExternalLink href="https://github.com/codeselfstudy/focus_timer">
                 Github
-            </a>
+            </ExternalLink>
             . Please join{" "}
-            <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href="https://forum.codeselfstudy.com/"
-            >
+            <ExternalLink href="https://forum.codeselfstudy.com/">
                 our online community
-            </a>{" "}
+            </ExternalLink>{" "}
             and ask the members there about current tasks that might need
             assistance. See also the{" "}
-            <a
-                href="https://github.com/codeselfstudy/focus_timer/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <ExternalLink href="https://github.com/codeselfstudy/focus_timer/issues">
                 issue queue
-            </a>
+            </ExternalLink>
             .
         </p>
     </div>
