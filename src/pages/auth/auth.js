@@ -7,6 +7,9 @@ import Spinner from "../../components/spinner/spinner";
 import "./auth.scss";
 
 const AuthPage = () => {
+    // TODO: I don't think this worked, because I still see the flash
+    // of a red outline on the form validation, even when the form is
+    // successfullly submitted.
     const [
         hasSuccessfulllySubmittedForm,
         setHasSuccessfullySubmittedForm,
