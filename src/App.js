@@ -11,7 +11,7 @@ import AuthPage from "./pages/auth/auth";
 import TimerStartPage from "./pages/timer-start/timer-start";
 import TimerPage from "./pages/timer/timer";
 import AboutPage from "./pages/about/about";
-import ProfilePage from "./pages/profile/profile";
+import AccountPage from "./pages/account/account";
 
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
@@ -60,7 +60,7 @@ class App extends React.Component {
                     <Switch>
                         <Route exact path="/" component={HomePage} />
                         <Route exact path="/about" component={AboutPage} />
-                        <Route exact path="/profile" component={ProfilePage} />
+                        <Route exact path="/account" component={AccountPage} />
                         <Route exact path="/start" component={TimerStartPage} />
                         <Route path="/timer/:timerId" component={TimerPage} />
                         <Route

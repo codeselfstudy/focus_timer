@@ -5,7 +5,7 @@ import "./form-input.scss";
 const FormInput = ({ label, handleChange, ...otherProps }) => (
     <div className="form-group">
         {label ? (
-            <label htmlFor={otherProps.name} className="label">
+            <label htmlFor={otherProps.id} className="label">
                 {label}
             </label>
         ) : null}

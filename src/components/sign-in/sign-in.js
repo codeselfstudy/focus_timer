@@ -8,11 +8,19 @@ import { auth } from "../../firebase/firebase.utils";
 import "./sign-in.scss";
 
 const SignIn = () => {
-    const [values, setValues] = useState({ email: "", password: "" });
+    const emptyFormValues = { email: "", password: "" };
+    const [values, setValues] = useState(emptyFormValues);
 
     async function handleSubmit(e) {
         e.preventDefault();
         const { email, password } = values;
+
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+            setValues(emptyFormValues);
+        } catch (err) {
+            console.error(err);
+        }
     }
 
     function handleChange(e) {
@@ -28,6 +36,7 @@ const SignIn = () => {
                     type="email"
                     label="Email"
                     name="email"
+                    id="signInEmail"
                     value={values.email}
                     onChange={handleChange}
                     required
@@ -36,6 +45,7 @@ const SignIn = () => {
                     type="password"
                     label="Password"
                     name="password"
+                    id="signInPassword"
                     value={values.password}
                     onChange={handleChange}
                     required

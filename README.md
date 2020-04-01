@@ -57,6 +57,7 @@ Use snake-case.
 - [ ] add sound notifications
 - [ ] add browser notifications
 - [ ] work on design
+- [ ] work on accessibility
 - [ ] create user profile page(s)
 - [ ] join a timer
 - [ ] remove the lines in `.gitignore` to add Redux

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
-import { IoIosLogOut } from "react-icons/io";
 import Spinner from "../spinner/spinner";
 
 import { selectCurrentUser } from "../../redux/user/user.selectors";
@@ -38,13 +37,7 @@ const Navbar = ({ siteName, currentUser }) => {
                         <Spinner fontSize="16" />
                     </>
                 ) : currentUser ? (
-                    <>
-                        <Link to="/profile">{currentUser.displayName}</Link>{" "}
-                        <IoIosLogOut
-                            onClick={() => auth.signOut()}
-                            title="Sign out"
-                        />
-                    </>
+                    <Link to="/account">{currentUser.displayName}</Link>
                 ) : (
                     <Link to="/auth">Sign In</Link>
                 )}

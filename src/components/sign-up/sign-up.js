@@ -50,6 +50,7 @@ const SignUp = () => {
                     type="text"
                     label="Username"
                     name="displayName"
+                    id="signUpUsername"
                     value={values.displayName}
                     onChange={handleChange}
                     required
@@ -58,6 +59,7 @@ const SignUp = () => {
                     type="email"
                     label="Email"
                     name="email"
+                    id="signUpEmail"
                     value={values.email}
                     onChange={handleChange}
                     required
@@ -66,6 +68,7 @@ const SignUp = () => {
                     type="password"
                     label="Password"
                     name="password"
+                    id="signUpPassword"
                     value={values.password}
                     onChange={handleChange}
                     required
@@ -74,6 +77,7 @@ const SignUp = () => {
                     type="password"
                     label="Confirm Password"
                     name="confirmPassword"
+                    id="signUpConfirmPassword"
                     value={values.confirmPassword}
                     onChange={handleChange}
                     required
