@@ -16,6 +16,18 @@ $ npm install
 
 Copy the file `.env-example` to `.env` and add your Firebase settings there. They don't need to be secret, but Firebase costs money.
 
+In development, for the Code Self Study version, you can use our public settings in your `.env` file.
+
+```
+REACT_APP_APIKEY=AIzaSyCToota4ZITvzYLX5MoIGJsFc7qF7l96k8
+REACT_APP_AUTHDOMAIN=focustimer-codeselfstudy.firebaseapp.com
+REACT_APP_DATABASEURL=https://focustimer-codeselfstudy.firebaseio.com
+REACT_APP_PROJECTID=focustimer-codeselfstudy
+REACT_APP_STORAGEBUCKET=focustimer-codeselfstudy.appspot.com
+REACT_APP_MESSAGINGSENDERID=935684307688
+REACT_APP_APPID=1:935684307688:web:fa71f29224fbb7b3b8a75d
+```
+
 ## Run
 
 ```text
