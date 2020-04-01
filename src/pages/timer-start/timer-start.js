@@ -10,7 +10,7 @@ const TimerStartPage = () => {
     const [timerId, setTimerId] = useState(null);
 
     function handleStartPomodoroTimer(e) {
-        setTimeout(() => setTimerId(Math.floor(Math.random() * 5000)), 2000);
+        setTimeout(() => setTimerId(Math.floor(Math.random() * 5000)), 1200);
     }
 
     return (

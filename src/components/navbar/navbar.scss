@@ -1,6 +1,6 @@
 .navbar {
     color: #fff;
-    background-color: #004a73;
+    background-color: #262626;
     padding: 27px;
     display: flex;
     justify-content: space-between;
@@ -9,11 +9,15 @@
     }
 
     .right {
+        span.loading-text {
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
     }
 
     a {
         text-decoration: none;
-        color: #eee;
+        color: #fff;
     }
 
     .site-name {
