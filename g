@@ -83,8 +83,8 @@ end
 
 unless Dir.exist?(dirname)
   Dir.mkdir(dirname)
-  # write redux files
   if component_type == 'r'
+    # write redux files
     write_template(dirname, "#{component_filename}.reducer.js", reducer_template)
     write_template(dirname, "#{component_filename}.actions.js", actions_template)
     write_template(dirname, "#{component_filename}.types.js", types_template)
