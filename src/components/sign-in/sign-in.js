@@ -7,7 +7,7 @@ import { auth } from "../../firebase/firebase.utils";
 
 import "./sign-in.scss";
 
-const SignIn = () => {
+const SignIn = ({ setHasSuccessfullySubmittedForm }) => {
     const emptyFormValues = { email: "", password: "" };
     const [values, setValues] = useState(emptyFormValues);
 
@@ -18,6 +18,7 @@ const SignIn = () => {
         try {
             await auth.signInWithEmailAndPassword(email, password);
             setValues(emptyFormValues);
+            setHasSuccessfullySubmittedForm(true);
         } catch (err) {
             console.error(err);
         }
