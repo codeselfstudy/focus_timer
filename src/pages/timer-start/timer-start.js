@@ -3,6 +3,7 @@ import { Redirect } from "react-router-dom";
 
 // import CustomButton from "../../components/custom-button/custom-button";
 import PressableButton from "../../components/pressable-button/pressable-button";
+import FormInput from "../../components/form-input/form-input";
 
 import "./timer-start.scss";
 
@@ -20,9 +21,26 @@ const TimerStartPage = () => {
             {timerId ? (
                 <Redirect to={`/timer/${timerId}`} />
             ) : (
-                <PressableButton handleClick={handleStartPomodoroTimer}>
-                    Start a Pomodoro Timer
-                </PressableButton>
+                <div>
+                    <p>
+                        TODO: add a place to paste a existing timer's ID or URL
+                        before clicking the button?
+                    </p>
+
+                    {/*
+                        <FormInput
+                            type="text"
+                            label="Timer ID or URL (optional)"
+                            name="email"
+                            id="signInEmail"
+                            value={values.tid}
+                            onChange={handleChange}
+                        />
+                    */}
+                    <PressableButton handleClick={handleStartPomodoroTimer}>
+                        Start a Pomodoro Timer
+                    </PressableButton>
+                </div>
             )}
 
             {/*

@@ -49,18 +49,16 @@ Use snake-case.
 ## TODO
 
 - [X] user sign up
-- [ ] user sign in
+- [X] user sign in
 - [ ] style the sign-in/up forms
-- [ ] "create timer" form
+- [ ] "create timer" form (MVP can use default 25/5 time blocks)
 - [ ] when user creates a timer it redirects to a URL with a timer
 - [ ] set firestore permissions
 - [ ] add sound notifications
 - [ ] add browser notifications
 - [ ] work on design
 - [ ] work on accessibility
-- [ ] create user profile page(s)
+- [ ] create user profile pages
 - [ ] join a timer
-- [ ] remove the lines in `.gitignore` to add Redux
-- [ ] add a note that users should email an admin to delete their account (if desired)
 - [ ] show the number of users on a timer
 - [ ] points system
