@@ -7,7 +7,7 @@ import { auth, createUserProfile } from "../../firebase/firebase.utils";
 
 import "./sign-up.scss";
 
-const SignUp = ({ setHasSuccessfullySubmittedForm }) => {
+const SignUp = () => {
     const emptyFormValues = {
         displayName: "",
         email: "",
@@ -32,7 +32,6 @@ const SignUp = ({ setHasSuccessfullySubmittedForm }) => {
             );
             createUserProfile(user, { displayName });
             setValues(emptyFormValues);
-            setHasSuccessfullySubmittedForm(true);
         } catch (err) {
             console.error(err);
         }
